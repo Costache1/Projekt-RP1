@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Projekt RP1</title>
+<meta lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+<script src="script.js" charset="utf-8"></script> 
+
+<h1 style="margin-top: -5px;">Schulungsraum Projekt</h1>
+
+<button onclick="toggleDarkMode()" id="button" class="button"  name="dark-mode">
+    Welcome to The Dark World
+</button>
+
+<button onclick="alarm()" id="uhrzeit" class="uhrzeit" name="uhrzeit">Uhrzeit</button>
+
+<form action="insert.php" method="post">
+<!--<?php include "insert.php"; ?>-->
+
+<label for="raum" style="font-size: 24px;">Schulungsraum:</label>
+
+<br>
+
+  <select id="raum" name="raum" style="width: 250px;">
+    <option value="placeholder">Bitte wählen:</option>
+    <option value="raum1">Schulungsraum 1</option>
+    <option value="raum2">Schulungsraum 2</option>
+    </select>
+
+<br><br>
+
+<label for="abteilung" style="font-size: 24px;">Abteilung:</label>
+<br>
+    <input type="text" id="abteilung" name="abteilung" style="width: 250px;" required>
+
+<br><br>
+
+<label for="personenzahl" style="font-size: 24px;">Personenzahl:</label>
+
+<br>
+
+  <input type="number" id="personenzahl" name="personenzahl" style="width: 250px;" required>
+
+<br><br>
+
+<label for="zeit1" style="font-size: 24px;">Zeit Von:</label>
+
+<br>
+
+    <input type="datetime-local" id="date" style="width: 250px;" required>
+
+<br><br>
+
+<label for="zeit2" style="font-size: 24px;">Zeit Bis:</label>
+
+<br>
+
+    <input type="datetime-local" id="date" style="width: 250px;" required>
+
+<br><br>
+
+<label for="dozent" style="font-size: 24px;">Dozent:</label>
+
+<br>
+
+    <input type="text" id="dozent" name="dozent" style="width: 250px;" required>
+
+<br><br>   
+
+<input type="submit" id="submit" name="submit" value="Submit" style="width: 250px; margin: 5px;">
+
+</form>
+
+</body>
+</html>
