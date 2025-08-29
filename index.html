@@ -23,58 +23,45 @@
 <form action="insert.php" method="post">
 <!--<?php include "insert.php"; ?>-->
 
+
 <label for="raum" style="font-size: 24px;">Schulungsraum:</label>
 
-<br>
 
+<div>
   <select id="raum" name="raum" style="width: 250px;">
     <option value="placeholder">Bitte wählen:</option>
     <option value="raum1">Schulungsraum 1</option>
     <option value="raum2">Schulungsraum 2</option>
     </select>
-
-<br><br>
-
+</div>
 <label for="abteilung" style="font-size: 24px;">Abteilung:</label>
-<br>
+<div>
     <input type="text" id="abteilung" name="abteilung" style="width: 250px;" required>
+</div>
 
-<br><br>
-
+<div>
 <label for="personenzahl" style="font-size: 24px;">Personenzahl:</label>
-
-<br>
-
+</div>
+<div>
   <input type="number" id="personenzahl" name="personenzahl" style="width: 250px;" required>
-
-<br><br>
-
+</div>
+<div>
 <label for="zeit1" style="font-size: 24px;">Zeit Von:</label>
-
-<br>
-
-    <input type="datetime-local" id="date" style="width: 250px;" required>
-
-<br><br>
-
+</div>
+<div>
+    <input type="datetime-local" id="date" name="zeit1" style="width: 250px;" required>
+</div>
 <label for="zeit2" style="font-size: 24px;">Zeit Bis:</label>
-
-<br>
-
-    <input type="datetime-local" id="date" style="width: 250px;" required>
-
-<br><br>
-
+<div>
+    <input type="datetime-local" id="date" name="zeit2" style="width: 250px;" required>
+</div>
 <label for="dozent" style="font-size: 24px;">Dozent:</label>
-
-<br>
-
+<div>
     <input type="text" id="dozent" name="dozent" style="width: 250px;" required>
-
-<br><br>   
-
+</div>
+<div>
 <input type="submit" id="submit" name="submit" value="Submit" style="width: 250px; margin: 5px;">
-
+</div>
 </form>
 </body>
 </html>

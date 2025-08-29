@@ -2,11 +2,13 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     $raum = $_POST['raum'];
-    $abteilung = $_POST['abteilung']
+    $abteilung = $_POST['abteilung'];
     $personenzahl = $_POST['personenzahl'];
     $zeit1 = $_POST['zeit1'];
     $zeit2 = $_POST['zeit2'];
     $dozent = $_POST['dozent'];
+
+    print_r($_POST);
 
     $file_path = 'data.txt';
 
